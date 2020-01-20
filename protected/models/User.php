@@ -65,14 +65,14 @@ class User extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'u_id' => 'à¸£à¸«à¸±à¸ª',
-			'u_usr' => 'à¸Šà¸·à¹ˆà¸­à¸œà¸¹à¹‰à¹ƒà¸Šà¹‰',
-			'u_pwd' => 'à¸£à¸«à¸±à¸ªà¸œà¹ˆà¸²à¸™',
-			'u_fullname' => 'à¸Šà¸·à¹ˆà¸­ - à¸ªà¸à¸¸à¸¥',
-			'u_position' => 'à¸•à¸³à¹à¸«à¸™à¹ˆà¸‡',
-			'u_department' => 'à¸«à¸™à¹ˆà¸§à¸¢à¸‡à¸²à¸™',
-			'u_lastlogin' => 'à¹ƒà¸Šà¹‰à¸‡à¸²à¸™à¸¥à¹ˆà¸²à¸ªà¸¸à¸”',
-			'u_status' => 'à¸ªà¸–à¸²à¸™à¸°',
+			'u_id' => 'รหัส',
+			'u_usr' => 'ชื่อผู้ใช้',
+			'u_pwd' => 'รหัสผ่าน',
+			'u_fullname' => 'ชื่อ - สกุล',
+			'u_position' => 'ตำแหน่ง',
+			'u_department' => 'หน่วยงาน',
+			'u_lastlogin' => 'ใช้งานล่าสุด',
+			'u_status' => 'สถานะ',
 		);
 	}
 

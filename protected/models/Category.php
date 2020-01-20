@@ -55,9 +55,9 @@ class Category extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'c_id' => 'C',
-			'c_name' => 'C Name',
-			'c_status' => 'C Status',
+			'c_id' => 'รหัส',
+			'c_name' => 'ชื่อหมวดหมู่',
+			'c_status' => 'สถานะ',
 		);
 	}
 

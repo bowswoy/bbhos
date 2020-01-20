@@ -42,3 +42,190 @@ Stack trace:
 REQUEST_URI=/bbhos/index.php?r=gii/model/index
 HTTP_REFERER=http://localhost/bbhos/index.php?r=gii/default/index
 ---
+2020/01/20 08:03:54 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\xampp\htdocs\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 C:\xampp\htdocs\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\framework\base\CModule.php(394): CDbConnection->init()
+#3 C:\xampp\htdocs\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 C:\xampp\htdocs\framework\gii\generators\model\ModelCode.php(60): CModule->__get('db')
+#5 C:\xampp\htdocs\framework\web\CFormModel.php(39): ModelCode->init()
+#6 C:\xampp\htdocs\framework\gii\CCodeGenerator.php(153): CFormModel->__construct()
+#7 C:\xampp\htdocs\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index')
+#13 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#14 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\bbhos\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/bbhos/index.php?r=gii/model/index
+HTTP_REFERER=http://localhost/bbhos/index.php?r=gii/controller/index
+---
+2020/01/20 08:04:18 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Unknown database 'bbhost' in C:\xampp\htdocs\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\xampp\htdocs\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 C:\xampp\htdocs\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\framework\base\CModule.php(394): CDbConnection->init()
+#3 C:\xampp\htdocs\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 C:\xampp\htdocs\framework\gii\generators\model\ModelCode.php(60): CModule->__get('db')
+#5 C:\xampp\htdocs\framework\web\CFormModel.php(39): ModelCode->init()
+#6 C:\xampp\htdocs\framework\gii\CCodeGenerator.php(153): CFormModel->__construct()
+#7 C:\xampp\htdocs\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index')
+#13 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#14 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\bbhos\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/bbhos/index.php?r=gii/model/index
+HTTP_REFERER=http://localhost/bbhos/index.php?r=gii/controller/index
+---
+2020/01/20 08:05:29 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Unknown database 'bbhost' in C:\xampp\htdocs\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\xampp\htdocs\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 C:\xampp\htdocs\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\framework\base\CModule.php(394): CDbConnection->init()
+#3 C:\xampp\htdocs\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 C:\xampp\htdocs\framework\gii\generators\model\ModelCode.php(60): CModule->__get('db')
+#5 C:\xampp\htdocs\framework\web\CFormModel.php(39): ModelCode->init()
+#6 C:\xampp\htdocs\framework\gii\CCodeGenerator.php(153): CFormModel->__construct()
+#7 C:\xampp\htdocs\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index')
+#13 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#14 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\bbhos\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/bbhos/index.php?r=gii/model/index
+HTTP_REFERER=http://localhost/bbhos/index.php?r=gii/controller/index
+---
+2020/01/20 08:05:31 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "bbadmin". in C:\xampp\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('bbadmin')
+#1 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\bbhos\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bbhos/index.php?r=bbadmin
+HTTP_REFERER=http://localhost/bbhos/index.php?r=gii/controller/index
+---
+2020/01/20 09:02:42 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\xampp\htdocs\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index')
+#9 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('user/index')
+#10 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\bbhos\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/bbhos/index.php?r=user/index
+HTTP_REFERER=http://localhost/bbhos/index.php?r=user/update&id=1
+---
+2020/01/20 09:02:47 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\xampp\htdocs\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index')
+#9 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('user/index')
+#10 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\bbhos\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/bbhos/index.php?r=user/index
+HTTP_REFERER=http://localhost/bbhos/index.php?r=user/update&id=1
+---
+2020/01/20 09:03:04 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in C:\xampp\htdocs\bbhos\protected\controllers\UserController.php:99
+Stack trace:
+#0 C:\xampp\htdocs\bbhos\protected\controllers\UserController.php(82): UserController->loadModel(0)
+#1 [internal function]: UserController->actionIndex(0)
+#2 C:\xampp\htdocs\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#3 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index')
+#13 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('user/index')
+#14 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\bbhos\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/bbhos/index.php?r=user/index
+HTTP_REFERER=http://localhost/bbhos/index.php?r=user/update&id=1
+---
+2020/01/20 09:03:46 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\xampp\htdocs\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index')
+#9 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('user/index')
+#10 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\bbhos\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/bbhos/index.php?r=user/index
+HTTP_REFERER=http://localhost/bbhos/index.php?r=user/update&id=1
+---
+2020/01/20 09:03:46 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\xampp\htdocs\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index')
+#9 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('user/index')
+#10 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\bbhos\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/bbhos/index.php?r=user/index
+HTTP_REFERER=http://localhost/bbhos/index.php?r=user/update&id=1
+---
+2020/01/20 09:03:56 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\xampp\htdocs\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index')
+#9 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('user/index')
+#10 C:\xampp\htdocs\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\bbhos\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/bbhos/index.php?r=user/index
+HTTP_REFERER=http://localhost/bbhos/index.php?r=user/update&id=1
+---
