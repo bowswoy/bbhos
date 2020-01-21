@@ -44,18 +44,6 @@
 	</div>
 
 	<div class="form-group">
-		<?php echo $form->labelEx($model,'u_lastlogin'); ?>
-		<?php echo $form->textField($model,'u_lastlogin', array('class'=>'form-control')); ?>
-		<?php echo $form->error($model,'u_lastlogin'); ?>
-	</div>
-
-	<div class="form-group">
-		<?php echo $form->labelEx($model,'u_status'); ?>
-		<?php echo $form->textField($model,'u_status', array('class'=>'form-control')); ?>
-		<?php echo $form->error($model,'u_status'); ?>
-	</div>
-
-	<div class="form-group">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'บันทึก' : 'บันทึกการแก้ไข', array('class'=>'btn btn-primary')); ?>
 	</div>
 

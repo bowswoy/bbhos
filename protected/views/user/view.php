@@ -15,11 +15,9 @@ $this->breadcrumbs=array(
 	'attributes'=>array(
 		'u_id',
 		'u_usr',
-		'u_pwd',
 		'u_fullname',
 		'u_position',
 		'u_department',
 		'u_lastlogin',
-		'u_status',
 	),
 )); ?>

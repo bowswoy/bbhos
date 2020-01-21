@@ -66,14 +66,14 @@
               <!-- User Account: style can be found in dropdown.less -->
               <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <span class="hidden-xs"><?php echo Yii::app()->user->detail->user_name; ?></span>
+                  <span class="hidden-xs"><?php echo Yii::app()->user->detail->u_fullname; ?></span>
                 </a>
                 <ul class="dropdown-menu">
                   <!-- User image -->
                   <li class="user-header">
                     <p>
-                      <?php echo Yii::app()->user->detail->user_position; ?>
-                      <small><?php echo Yii::app()->user->detail->dep->dep_name; ?></small>
+                      <?php echo Yii::app()->user->detail->u_position; ?>
+                      <small><?php echo Yii::app()->user->detail->u_department; ?></small>
                     </p>
                   </li>
                   <!-- Menu Footer-->
@@ -149,17 +149,6 @@
   Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl . '/js/cookies.js', CClientScript::POS_END);
   Yii::app()->clientScript->registerScript('settheme', '
 		$(".top-alert").delay(3000).fadeOut();
-		var mySkins = ["skin-blue","skin-black","skin-red","skin-yellow","skin-purple","skin-green","skin-blue-light","skin-black-light","skin-red-light","skin-yellow-light","skin-purple-light","skin-green-light"];
-		$.each(mySkins, function (i) {
-		  $("body").removeClass(mySkins[i]);
-		});
-		var theme = Cookies.get("theme");
-		if(theme == null)
-			theme = "skin-blue";
-	
-		$("body").addClass(theme);
-		$(\'[data-toggle="popover"]\').popover();  
-		$(\'[data-toggle="tooltip"]\').tooltip();
 	');
   ?>
 </body>

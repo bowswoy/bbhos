@@ -9,6 +9,7 @@
  * @property string $n_datetime
  * @property integer $n_views
  * @property integer $n_ispin
+ * @property string $n_thumbnail
  * @property string $n_body
  * @property string $n_last_update
  * @property integer $n_status
@@ -41,10 +42,11 @@ class News extends CActiveRecord
 			array('n_title, n_body', 'required'),
 			array('n_views, n_ispin, n_status, c_id, u_id', 'numerical', 'integerOnly'=>true),
 			array('n_title', 'length', 'max'=>512),
+			array('n_thumbnail', 'length', 'max'=>255),
 			array('n_datetime, n_last_update', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('n_id, n_title, n_datetime, n_views, n_ispin, n_body, n_last_update, n_status, c_id, u_id', 'safe', 'on'=>'search'),
+			array('n_id, n_title, n_datetime, n_views, n_ispin, n_thumbnail, n_body, n_last_update, n_status, c_id, u_id', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -73,6 +75,7 @@ class News extends CActiveRecord
 			'n_datetime' => 'วันที่',
 			'n_views' => 'จำนวนเข้าชม',
 			'n_ispin' => 'ปักหมุด',
+			'n_thumbnail' => 'ภาพประกอบ',
 			'n_body' => 'เนื้อหา',
 			'n_last_update' => 'แก้ไขล่าสุด',
 			'n_status' => 'สถานะ',
@@ -104,6 +107,7 @@ class News extends CActiveRecord
 		$criteria->compare('n_datetime',$this->n_datetime,true);
 		$criteria->compare('n_views',$this->n_views);
 		$criteria->compare('n_ispin',$this->n_ispin);
+		$criteria->compare('n_thumbnail',$this->n_thumbnail,true);
 		$criteria->compare('n_body',$this->n_body,true);
 		$criteria->compare('n_last_update',$this->n_last_update,true);
 		$criteria->compare('n_status',$this->n_status);
@@ -124,5 +128,16 @@ class News extends CActiveRecord
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
+	}
+
+	protected function beforeSave()
+	{
+		if ($this->isNewRecord) {
+			$this->n_datetime = date("Y-m-d H:i:s");
+		} else {
+			$this->n_last_update = date("Y-m-d H:i:s");
+		}
+		$this->u_id = Yii::app()->user->id;
+		return parent::beforeSave();
 	}
 }

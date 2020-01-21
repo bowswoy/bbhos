@@ -53,7 +53,7 @@ $this->breadcrumbs = array(
 						'columns' => array(
 							array(
 								'name' => 'c_name',
-								'filter' => CHtml::textField('Category[c_name]', '', array('class' => 'form-control', 'autoconplete' => 'off', 'placeholder' => 'ใส่คำบางส่วนค้นหาได้')),
+								'filter' => CHtml::textField('Category[c_name]', $model->c_name, array('class' => 'form-control', 'autoconplete' => 'off', 'placeholder' => 'ใส่คำบางส่วนค้นหาได้')),
 							),
 							array(
 								'class' => 'CButtonColumn',
