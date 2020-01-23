@@ -1,238 +1,331 @@
-span.required, div.errorMessage {
-	color: #ff0000;
+span.required,
+div.errorMessage {
+    color: #ff0000;
 }
+
 .top-alert {
-	position: fixed;
-	top: 0px;
-	width: 100%;
-	z-index: 100000;
-	left: 0;
-	padding: 20px;
-	display: inline-block;
-	text-align: center;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 100000;
+    left: 0;
+    padding: 20px;
+    display: inline-block;
+    text-align: center;
 }
+
 .top-alert .alert {
-	width: auto !important;
-	height: 100%;
-	display: inline;
-	position: relative;
-	margin: 0;
+    width: auto !important;
+    height: 100%;
+    display: inline;
+    position: relative;
+    margin: 0;
 }
+
 .top-alert .alert .close {
-	position: absolute;
-	top: 11px;
-	right: 10px;
-	color: inherit;
+    position: absolute;
+    top: 11px;
+    right: 10px;
+    color: inherit;
 }
 
+.f1-steps {
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+}
 
-.f1-steps { overflow: hidden; position: relative; margin-top: 20px; text-align: center;}
+.f1-progress {
+    position: absolute;
+    top: 24px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #ddd;
+}
 
-.f1-progress { position: absolute; top: 24px; left: 0; width: 100%; height: 1px; background: #ddd; }
-.f1-progress-line { position: absolute; top: 0; left: 0; height: 2px; background: #f39c12; }
+.f1-progress-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2px;
+    background: #f39c12;
+}
 
-.f1-step { position: relative; float: left; width: 25%; padding: 0 5px; }
+.f1-step {
+    position: relative;
+    float: left;
+    width: 25%;
+    padding: 0 5px;
+}
 
 .f1-step-icon {
-	display: inline-block; width: 40px; height: 40px; margin-top: 4px; background: #ddd;
-	font-size: 16px; color: #fff; line-height: 40px;
-	-moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-top: 4px;
+    background: #ddd;
+    font-size: 16px;
+    color: #fff;
+    line-height: 40px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
 }
+
 .f1-step.activated .f1-step-icon {
-	background: #fff; border: 2px solid #e08e0b; color: #f39c12; line-height: 38px;
+    background: #fff;
+    border: 2px solid #e08e0b;
+    color: #f39c12;
+    line-height: 38px;
 }
+
 .f1-step.active .f1-step-icon {
-	width: 48px; height: 48px; margin-top: 0; background: #f39c12; font-size: 22px; line-height: 48px;
+    width: 48px;
+    height: 48px;
+    margin-top: 0;
+    background: #f39c12;
+    font-size: 22px;
+    line-height: 48px;
 }
+
 .f1-step.active .f1-step-icon.icon-5 {
-	background: #00a65a;
+    background: #00a65a;
 }
+
 .f1-step.active p.txt-5 a {
-	color: #008d4c;
+    color: #008d4c;
 }
+
 .f1-step-icon a {
-	color: #ffffff;
+    color: #ffffff;
 }
+
 .f1-step.activated a {
-	color: #e08e0b;
+    color: #e08e0b;
 }
-.f1-step p, .f1-step p a { color: #ccc; }
-.f1-step.activated p, .f1-step.activated p a { color: #e08e0b; }
-.f1-step.active p, .f1-step.active p a { color: #e08e0b; }
 
-.f1 fieldset { display: none; text-align: left; }
+.f1-step p,
+.f1-step p a {
+    color: #ccc;
+}
 
-.f1-buttons { text-align: right; }
+.f1-step.activated p,
+.f1-step.activated p a {
+    color: #e08e0b;
+}
+
+.f1-step.active p,
+.f1-step.active p a {
+    color: #e08e0b;
+}
+
+.f1 fieldset {
+    display: none;
+    text-align: left;
+}
+
+.f1-buttons {
+    text-align: right;
+}
+
 .ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-.desc-text {
-	color: #606060;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
+.desc-text {
+    color: #606060;
+}
 
 .steps {
-  list-style-type: none;
-  padding: 0;
+    list-style-type: none;
+    padding: 0;
 }
+
 .steps li {
-  display: inline-block;
-  margin-bottom: 3px;
+    display: inline-block;
+    margin-bottom: 3px;
 }
-.steps li span, .steps li p {
-  background: #e5f4fd;
-  padding: 8px 20px;
-  color: #0077bf;
-  display: block;
-  font-size: 14px;
-  font-weight: bold;
-  position: relative;
-  text-indent: 12px;
+
+.steps li span,
+.steps li p {
+    background: #e5f4fd;
+    padding: 8px 20px;
+    color: #0077bf;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    text-indent: 12px;
 }
-.steps li span:hover, .steps li p:hover {
-  text-decoration: none;
+
+.steps li span:hover,
+.steps li p:hover {
+    text-decoration: none;
 }
-.steps li span:before, .steps li p:before {
-  border-bottom: 18px solid transparent;
-  border-left: 12px solid #fff;
-  border-top: 18px solid transparent;
-  content: "";
-  height: 0;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 0;
-  margin-top: -18px;
+
+.steps li span:before,
+.steps li p:before {
+    border-bottom: 18px solid transparent;
+    border-left: 12px solid #fff;
+    border-top: 18px solid transparent;
+    content: "";
+    height: 0;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    margin-top: -18px;
 }
-.steps li span:after, .steps li p:after {
-  border-bottom: 18px solid transparent;
-  border-left: 12px solid #e5f4fd;
-  border-top: 18px solid transparent;
-  content: "";
-  height: 0;
-  position: absolute;
-  /*right: -12px;*/
-  left:100%;
-  top: 50%;
-  width: 0;
-  margin-top: -18px;
-  z-index: 1;
+
+.steps li span:after,
+.steps li p:after {
+    border-bottom: 18px solid transparent;
+    border-left: 12px solid #e5f4fd;
+    border-top: 18px solid transparent;
+    content: "";
+    height: 0;
+    position: absolute;
+    /*right: -12px;*/
+    left: 100%;
+    top: 50%;
+    width: 0;
+    margin-top: -18px;
+    z-index: 1;
 }
-.steps li.active span, .steps li.active p {
-  background: #0077bf;
-  color: #fff;
+
+.steps li.active span,
+.steps li.active p {
+    background: #0077bf;
+    color: #fff;
 }
-.steps li.active span:after, .steps li.active p:after {
-  border-left: 12px solid #0077bf;
+
+.steps li.active span:after,
+.steps li.active p:after {
+    border-left: 12px solid #0077bf;
 }
-.steps li.undone span, .steps li.undone p {
-  background: #eee;
-  color: #333;
-}
-.steps li.undone span:after, .steps li.undone p:after {
-  border-left: 12px solid #eee;
-}
+
+.steps li.undone span,
 .steps li.undone p {
-  color: #aaa;
+    background: #eee;
+    color: #333;
 }
+
+.steps li.undone span:after,
+.steps li.undone p:after {
+    border-left: 12px solid #eee;
+}
+
+.steps li.undone p {
+    color: #aaa;
+}
+
 select.form-control option:disabled {
-	color: #eee;
-	background: #cccccc;
-	font-style: italic;
+    color: #eee;
+    background: #cccccc;
+    font-style: italic;
 }
 
 .step-box {
-	padding:0;
-	border:1px solid #ddd;
-	background:#fff
+    padding: 0;
+    border: 1px solid #ddd;
+    background: #fff
 }
+
 .step-state {
-	padding:0;
-	margin-top:0;
-	background:#f7f7f7
+    padding: 0;
+    margin-top: 0;
+    background: #f7f7f7
 }
+
 .step-state ul {
-	list-style:none;
-	margin: 0;
+    list-style: none;
+    margin: 0;
     padding: 0;
 }
+
 .step-state ul:after {
-	content:'';
-	display:block;
-	clear:both
+    content: '';
+    display: block;
+    clear: both
 }
+
 .step-state ul li {
-	float:left;
-	position:relative;
-	width:20%; 
-	padding-top:50px; 
-	font-size:15px;
-	font-weight:bold;
-	text-align:center;
-	line-height:12px;
-	color:#666
+    float: left;
+    position: relative;
+    width: 20%;
+    padding-top: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 12px;
+    color: #666
 }
+
 .step-state ul li:first-child {
-	font-size:13px
+    font-size: 13px
 }
 
 .step-state ul li p:after {
-	position:absolute; 
-	width:41px;
-	height:24px;
-	margin-right:-20px;
-	background:url('../imgs/ico_pangpays.png') no-repeat 0 0;
-	background-size:auto 24px;
-	background-position:-58px 0;
-	top:0;
-	right:0;
-	color:#fff;
-	font-size:11px;
-	line-height:16px;
-	letter-spacing:-.5px;
+    position: absolute;
+    width: 41px;
+    height: 24px;
+    margin-right: -20px;
+    background: url('../imgs/ico_pangpays.png') no-repeat 0 0;
+    background-size: auto 24px;
+    background-position: -58px 0;
+    top: 0;
+    right: 0;
+    color: #fff;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: -.5px;
 }
+
 .step-state ul li:first-child p {
-	padding-top:6px
+    padding-top: 6px
 }
+
 .step-state ul li span {
-	display:block;
-	margin-top:2px;
-	font-weight:normal;
-	color:#898989;
-	font-size:12px
+    display: block;
+    margin-top: 2px;
+    font-weight: normal;
+    color: #898989;
+    font-size: 12px
 }
 
 .step-state ul li:before {
-	position:absolute;
-	top:35px;
-	left:0;
-	right:0;
-	height:3px;
-	background:#ddd;
-	content:''
+    position: absolute;
+    top: 35px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: #ddd;
+    content: ''
 }
 
 .step-state ul li:nth-child(1):before {
-	left:50%
+    left: 50%
 }
 
 .step-state ul li:nth-child(5):before {
-	right:50%
+    right: 50%
 }
 
 .step-state ul li:after {
-	position:absolute;
-	top:27px;
-	left:50%;
-	width:20px;
-	height:20px;
-	margin-left:-10px;
-	background:url('../imgs/ico_pangpays.png') no-repeat 0 0;
-	background-size:auto 24px;
-	background-position:0 0;
-	content:''
+    position: absolute;
+    top: 27px;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin-left: -10px;
+    background: url('../imgs/ico_pangpays.png') no-repeat 0 0;
+    background-size: auto 24px;
+    background-position: 0 0;
+    content: ''
 }
 
 .step-state.step1 ul li:nth-child(1):before,
@@ -243,7 +336,7 @@ select.form-control option:disabled {
 .step-state.step4 ul li:nth-child(-n+4):before,
 .step-state.step4-ing ul li:nth-child(-n+4):before,
 .step-state.step5 ul li:nth-child(-n+5):before {
-	background:#ff889b
+    background: #ff889b
 }
 
 .step-state.step1 ul li:nth-child(1):after,
@@ -254,19 +347,31 @@ select.form-control option:disabled {
 .step-state.step4 ul li:nth-child(-n+4):after,
 .step-state.step4-ing ul li:nth-child(-n+4):after,
 .step-state.step5 ul li:nth-child(-n+5):after {
-	background-position:-20px 0
+    background-position: -20px 0
 }
 
 .step-state ul li p:before {
-	position:absolute;
-	top:35px;
-	left:50%;
-	right:0;
-	height:3px;
-	content:'';
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    right: 0;
+    height: 3px;
+    content: '';
 }
+
 .step-state.step2 ul li:nth-child(2) p:before,
 .step-state.step3 ul li:nth-child(3) p:before,
 .step-state.step4 ul li:nth-child(4) p:before {
-	background:#ddd
+    background: #ddd
+}
+
+.mce-content-body p,
+.mce-content-body div,
+.mce-content-body h1,
+.mce-content-body h2,
+.mce-content-body h3,
+.mce-content-body h4,
+.mce-content-body h5,
+.mce-content-body h6 {
+    line-height: initial !important;
 }

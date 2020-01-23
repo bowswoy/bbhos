@@ -9,6 +9,7 @@ return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'My Web Application',
 	'theme'=>'pstheme',
+	'language'=>'th',
 	// preloading 'log' component
 	'preload'=>array('log'),
 
@@ -35,6 +36,10 @@ return array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
+        'phpThumb' => array(
+            'class' => 'ext.EPhpThumb.EPhpThumb',
+            'options' => array()
+        ),
 
 		// uncomment the following to enable URLs in path-format
 		/*

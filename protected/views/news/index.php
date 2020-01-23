@@ -16,7 +16,7 @@ $this->breadcrumbs = array(
 				<h3 class="box-title">เพิ่มข้อมูล</h3>
 			</div>
 			<div class="box-body">
-				<?php $this->renderPartial('_form', array('model' => $modelAction)); ?>
+				<?php $this->renderPartial('_form', array('model' => $modelAction, 'attachments'=>$modelAction->attachments)); ?>
 			</div>
 		</div>
 
@@ -61,11 +61,12 @@ $this->breadcrumbs = array(
 							),
 							array(
 								'name' => 'n_datetime',
-								'filter' => CHtml::textField('News[n_datetime]', '', array('class' => 'form-control', 'autoconplete' => 'off', 'placeholder' => 'ใส่คำบางส่วนค้นหาได้')),
+								'filter' => false,
 							),
 							array(
 								'name' => 'c_id',
-								'filter' => CHtml::textField('News[c_id]', '', CHtml::listData(Category::model()->findAll(array('condition' => 'c_status = 1', 'order' => 'c_name ASC')), 'c_id', 'c_name'), array('class' => 'form-control', 'autoconplete' => 'off', 'placeholder' => 'ใส่คำบางส่วนค้นหาได้')),
+								'value'=>'$data->c->c_name',
+								'filter' => CHtml::dropDownList('News[c_id]', $model->c_id, CHtml::listData(Category::model()->findAll(array('condition' => 'c_status = 1', 'order' => 'c_name ASC')), 'c_id', 'c_name'), array('class' => 'form-control', 'autoconplete' => 'off', 'prompt' => 'ทั้งหมด')),
 							),
 							array(
 								'class' => 'CButtonColumn',

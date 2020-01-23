@@ -1,0 +1,13 @@
+<?php
+
+/**
+  SladekTinyMCE
+ */
+class SladekTinyMce extends CInputWidget {
+
+    public function init() {
+        $assetUrl = Yii::app()->assetManager->publish(Yii::getPathOfAlias('ext.tinymce.js.assets'));
+        Yii::app()->clientScript->registerScriptFile($assetUrl . '/tinymce.min.js?apiKey=080qjkfu12a3zmh4jb9dtcvbyte4s5a2qutfneg2n4ea2zr7');
+    }
+
+}
