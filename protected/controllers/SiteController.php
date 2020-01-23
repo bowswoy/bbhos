@@ -36,6 +36,22 @@ class SiteController extends Controller
 			'news' => ps::getNewsFromCategory(2, 4),
 			'procurement' => ps::getNewsFromCategory(4, 5),
 			'job' => ps::getNewsFromCategory(5, 5),
+			'banner' => ps::getNewsFromCategory(8, 8),
+			'cert' => ps::getNewsFromCategory(3, 12)
+		));
+	}
+
+	public function actionView($id)
+	{
+		$model = News::model()->findByPk($id);
+		if ($model === null)
+			throw new CHttpException(404, 'The requested page does not exist.');
+			
+		$model->n_views += 1;
+		$model->save();
+
+		$this->render('view', array(
+			'model' => $model
 		));
 	}
 
@@ -57,6 +73,7 @@ class SiteController extends Controller
 	 */
 	public function actionLogin()
 	{
+		Yii::app()->theme = 'pstheme';
 		$this->layout = 'login';
 		$model = new LoginForm;
 

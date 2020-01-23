@@ -62,11 +62,18 @@ $this->breadcrumbs = array(
 							array(
 								'name' => 'n_datetime',
 								'filter' => false,
+								'value'=>'ps::dateOut($data->n_datetime, "medium", "short")',
+								'htmlOptions'=>array(
+									'nowrap'=>true
+								)
 							),
 							array(
 								'name' => 'c_id',
 								'value'=>'$data->c->c_name',
 								'filter' => CHtml::dropDownList('News[c_id]', $model->c_id, CHtml::listData(Category::model()->findAll(array('condition' => 'c_status = 1', 'order' => 'c_name ASC')), 'c_id', 'c_name'), array('class' => 'form-control', 'autoconplete' => 'off', 'prompt' => 'ทั้งหมด')),
+								'htmlOptions'=>array(
+									'nowrap'=>true
+								)
 							),
 							array(
 								'class' => 'CButtonColumn',

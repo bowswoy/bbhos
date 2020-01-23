@@ -46,4 +46,15 @@ class ps
 
         return $news;
     }
+
+    public static function validUrl($url = '') {
+        $url = strip_tags($url);
+        if (filter_var($url, FILTER_VALIDATE_URL)) {
+            return true;
+        } else {
+            return false;
+        }
+
+        return false;
+    }
 }

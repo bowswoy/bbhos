@@ -47,10 +47,13 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . '/css/ind
             </div>
         </nav>
     </header>
-    <main role="main" class="flex-shrink-0">
-        <?php echo $content; ?>
 
-        <div class="top-footer mt-3 border-bottom">
+    <main role="main" class="flex-shrink-0 mb-4">
+        <?php echo $content; ?>
+    </main>
+
+    <footer class="footer mt-auto py-3">
+        <div class="top-footer border-bottom">
             <div class="container">
                 <div class="pt-3 pb-3">
                     <div class="row">
@@ -92,9 +95,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . '/css/ind
                 </div>
             </div>
         </div>
-    </main>
-    <footer class="footer mt-auto py-3">
-        <div class="container">
+        <div class="container pt-3">
             <span class="text-muted">&copy; 2020</span>
         </div>
     </footer>
