@@ -28,7 +28,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . '/css/ind
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">หน้าแรก <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="<?php echo Yii::app()->getBaseUrl(true); ?>">หน้าแรก <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">เกี่ยวกับโรงพยาบาล</a>

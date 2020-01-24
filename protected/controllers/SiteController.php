@@ -46,12 +46,31 @@ class SiteController extends Controller
 		$model = News::model()->findByPk($id);
 		if ($model === null)
 			throw new CHttpException(404, 'The requested page does not exist.');
-			
+
 		$model->n_views += 1;
 		$model->save();
 
 		$this->render('view', array(
 			'model' => $model
+		));
+	}
+
+	public function actionCategory($id)
+	{
+		$category = Category::model()->findByPk($id);
+		if ($category === null)
+			throw new CHttpException(404, 'The requested page does not exist.');
+
+		$model = new News('search');
+		$model->unsetAttributes();  // clear any default values
+		if (isset($_GET['News']))
+			$model->attributes = $_GET['News'];
+
+		$model->c_id = $id;
+
+		$this->render('category', array(
+			'model' => $model,
+			'category' => $category
 		));
 	}
 

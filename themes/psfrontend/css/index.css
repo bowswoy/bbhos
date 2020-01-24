@@ -122,3 +122,7 @@ h1.view-title {
     font-size: 1.5rem;
     line-height: 2.1rem;
 }
+
+h5.cat-text {
+    line-height: inherit !important;
+}
