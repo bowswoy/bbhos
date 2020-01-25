@@ -10,6 +10,7 @@ return array(
 	'name'=>'โรงพยาบาลบึงบูรพ์ จังหวัดศรีสะเกษ',
 	'theme'=>'pstheme',
 	'language'=>'th',
+	'timezone'=>'Asia/Bangkok',
 	// preloading 'log' component
 	'preload'=>array('log'),
 

@@ -114,6 +114,8 @@ class News extends CActiveRecord
 		$criteria->compare('c_id',$this->c_id);
 		$criteria->compare('u_id',$this->u_id);
 
+		$criteria->order = 'n_ispin ASC, n_id DESC';
+
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));

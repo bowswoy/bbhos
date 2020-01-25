@@ -27,20 +27,20 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . '/css/ind
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="<?php echo Yii::app()->getBaseUrl(true); ?>">หน้าแรก <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">เกี่ยวกับโรงพยาบาล</a>
+                            <a class="nav-link" href="<?php echo Yii::app()->controller->createUrl('site/category', array('id'=>'1')); ?>">เกี่ยวกับโรงพยาบาล</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">ข่าวสาร</a>
+                            <a class="nav-link" href="<?php echo Yii::app()->controller->createUrl('site/category', array('id'=>'2')); ?>">ข่าวสาร</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">บริการประชาชน</a>
+                            <a class="nav-link" href="<?php echo Yii::app()->controller->createUrl('site/category', array('id'=>'6')); ?>">บริการประชาชน</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">ติดต่อเรา</a>
+                            <a class="nav-link" href="<?php echo Yii::app()->controller->createUrl('site/view', array('id'=>'13')); ?>">ติดต่อเรา</a>
                         </li>
                     </ul>
                 </div>
@@ -60,28 +60,28 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->theme->baseUrl . '/css/ind
                         <div class="col-md-3">
                             <h5>แนะนำโรงพยาบาล</h5>
                             <ul class="nav-list">
-                                <li><a href="#">เกี่ยวกับโรงพยาบาล</a></li>
-                                <li><a href="#">โครงสร้างการบริหารงาน</a></li>
-                                <li><a href="#">ทำเนียบบุคลากร</a></li>
-                                <li><a href="#">ที่อยู่/ช่องทางติดต่อ</a></li>
+                                <li><a href="<?php echo Yii::app()->controller->createUrl('site/view', array('id'=>'10')); ?>">เกี่ยวกับโรงพยาบาล</a></li>
+                                <li><a href="<?php echo Yii::app()->controller->createUrl('site/view', array('id'=>'11')); ?>">โครงสร้างการบริหารงาน</a></li>
+                                <li><a href="<?php echo Yii::app()->controller->createUrl('site/view', array('id'=>'12')); ?>">ทำเนียบบุคลากร</a></li>
+                                <li><a href="<?php echo Yii::app()->controller->createUrl('site/view', array('id'=>'13')); ?>">ที่อยู่/ช่องทางติดต่อ</a></li>
                             </ul>
                         </div>
                         <div class="col-md-3">
                             <h5>บริการประชาชน</h5>
                             <ul class="nav-list">
-                                <li><a href="#">ผู้ป่วยนอก</a></li>
-                                <li><a href="#">ผู้ป่วยอุบัติเหตุและฉุกเฉิน</a></li>
-                                <li><a href="#">คลินิกเฉพาะ</a></li>
-                                <li><a href="#">ทันตกรรม</a></li>
+                                <li><a href="<?php echo Yii::app()->controller->createUrl('site/view', array('id'=>'17')); ?>">ผู้ป่วยนอก</a></li>
+                                <li><a href="<?php echo Yii::app()->controller->createUrl('site/view', array('id'=>'16')); ?>">ผู้ป่วยอุบัติเหตุและฉุกเฉิน</a></li>
+                                <li><a href="<?php echo Yii::app()->controller->createUrl('site/view', array('id'=>'15')); ?>">คลินิกเฉพาะ</a></li>
+                                <li><a href="<?php echo Yii::app()->controller->createUrl('site/view', array('id'=>'14')); ?>">ทันตกรรม</a></li>
                             </ul>
                         </div>
                         <div class="col-md-3">
                             <h5>ข่าวสาร</h5>
                             <ul class="nav-list">
-                                <li><a href="#">ประกาศ/แจ้งทราบ</a></li>
-                                <li><a href="#">ประกวดราคา/จัดซื้อ-จัดจ้าง</a></li>
-                                <li><a href="#">รับสมัครงาน</a></li>
-                                <li><a href="#">สาระน่ารู้</a></li>
+                                <li><a href="<?php echo Yii::app()->controller->createUrl('site/category', array('id'=>'2')); ?>">ประกาศ/แจ้งทราบ</a></li>
+                                <li><a href="<?php echo Yii::app()->controller->createUrl('site/category', array('id'=>'4')); ?>">ประกวดราคา/จัดซื้อ-จัดจ้าง</a></li>
+                                <li><a href="<?php echo Yii::app()->controller->createUrl('site/category', array('id'=>'5')); ?>">รับสมัครงาน</a></li>
+                                <li><a href="<?php echo Yii::app()->controller->createUrl('site/category', array('id'=>'9')); ?>">สาระน่ารู้</a></li>
                             </ul>
                         </div>
                         <div class="col-md-3">

@@ -1,7 +1,7 @@
 <div class="row">
-    <div class="col-12 col-md-3 mt-3">
+    <div class="col-12 col-md-3 mt-4">
         <a href="<?php echo $this->createUrl('site/view', array('id' => $data->n_id)); ?>">
-            <img src="<?php echo Yii::app()->baseUrl; ?>/images/n_<?php echo $data->n_thumbnail; ?>" class="img-fluid" alt="<?php echo $data->n_thumbnail; ?>">
+            <img src="<?php echo Yii::app()->baseUrl; ?>/images/og_<?php echo $data->n_thumbnail; ?>" class="img-fluid" alt="<?php echo $data->n_thumbnail; ?>">
         </a>
     </div>
     <div class="col-12 col-md-9 mt-3">
