@@ -100,6 +100,9 @@
         <ul class="sidebar-menu" data-widget="tree">
           <li class="header">เมนูการใช้งาน</li>
           <li><a href="<?php echo Yii::app()->getbaseUrl(true); ?>"><i class="fa fa-home text-red"></i> <span>หน้าหลัก</span></a></li>
+          <li><a href="<?php echo $this->createUrl('news/index'); ?>"><i class="fa fa-plus-circle text-white"></i> <span>ข่าวสาร</span></a></li>
+          <li><a href="<?php echo $this->createUrl('category/index'); ?>"><i class="fa fa-folder text-white"></i> <span>หมวดหมู่</span></a></li>
+          <li><a href="<?php echo $this->createUrl('user/index'); ?>"><i class="fa fa-users text-white"></i> <span>ผู้ใช้งาน</span></a></li>
         </ul>
       </section>
       <!-- /.sidebar -->

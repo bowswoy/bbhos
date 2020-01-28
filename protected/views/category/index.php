@@ -3,7 +3,7 @@
 /* @var $model Category */
 
 $this->breadcrumbs = array(
-	'Categories' => array('index'),
+	'ผู้ดูแลระบบ' => array('bbadmin/index'),
 	'จัดการข้อมูล',
 );
 ?>

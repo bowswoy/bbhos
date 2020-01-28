@@ -3,7 +3,7 @@
 /* @var $model User */
 
 $this->breadcrumbs = array(
-	'Users' => array('index'),
+	'ผู้ดูแลระบบ' => array('bbadmin/index'),
 	'จัดการข้อมูล',
 );
 ?>
